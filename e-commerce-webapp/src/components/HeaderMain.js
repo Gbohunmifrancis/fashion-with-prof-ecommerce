@@ -4,12 +4,13 @@ import { BiUser } from 'react-icons/bi';
 import { FiHeart } from 'react-icons/fi';
 import { HiOutlineShoppingBag } from 'react-icons/hi';
 
+
 const HeaderMain = ({ children }) => {
     return (
         <div className='border-b border-gray-200 py-6'>
             <div className='container sm:flex justify-between items-center'>
-                <div className='font-bold text-2xl text-center pb-4 sm:pb-0 text-blackish'>
-                    Fashion with Prof
+                <div className='text-center pb-4 sm:pb-0'>
+                    <img src="/fashionwithprof.jpg" alt="Logo" className='mx-auto h-24 sm:h-32 md:h-22 w-auto' />
                 </div>
 
                 <div className='w-full sm:w-[300px] md:w-[70%] relative flex items-center right-3'>
@@ -18,9 +19,9 @@ const HeaderMain = ({ children }) => {
                         type='text'
                         placeholder='Enter any Product name...'
                     />
-                    <BsSearch className=' mr-3 mt-3 right-14 top-0 absolute top-1/2 transform -translate-y-1/2 mr-3 text-gray-400' size={20} />
+                    <BsSearch className='mr-3 mt-3 right-14 top-0 absolute top-1/2 transform -translate-y-1/2 text-gray-400' size={20} />
 
-                    <div className=' gap-4 ml-8 flex space-x-4 text-gray-500 text-[30px]'>
+                    <div className='gap-4 ml-8 flex space-x-4 text-gray-500 text-[30px]'>
                         <BiUser />
                         <div className='relative'>
                             <FiHeart />
