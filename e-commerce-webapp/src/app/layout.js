@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
         <HeaderTop/>
         <HeaderMain/>
         <Navbar/>
+        
         <MobNavbar/>
         
         {children}
