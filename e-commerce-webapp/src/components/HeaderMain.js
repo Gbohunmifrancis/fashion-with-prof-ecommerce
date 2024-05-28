@@ -19,7 +19,7 @@ const HeaderMain = ({ children }) => {
                         type='text'
                         placeholder='Enter any Product name...'
                     />
-                    <BsSearch className='mr-3 mt-3 right-14 top-0 absolute top-1/2 transform -translate-y-1/2 text-gray-400' size={20} />
+                    <BsSearch className='mr-3 mt-3 right-14 absolute top-1/2 transform -translate-y-1/2 text-gray-400' size={20} />
 
                     <div className='gap-4 ml-8 flex space-x-4 text-gray-500 text-[30px]'>
                         <BiUser />
