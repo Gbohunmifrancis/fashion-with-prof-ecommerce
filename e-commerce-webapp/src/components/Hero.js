@@ -1,18 +1,7 @@
 "use client";
-
 import React from 'react';
 import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
-
-const Slide = ({ img, title, mainTitle, price }) => (
-  <div>
-    <img src={img} alt={title} />
-    <h3>{title}</h3>
-    <h2>{mainTitle}</h2>
-    <p>{price}</p>
-  </div>
-);
+import Slide from './Slide';
 
 const Hero = () => {
   const settings = {
@@ -49,7 +38,8 @@ const Hero = () => {
   ];
 
   return (
-    <div>
+    <div className='flex justify-center'>
+         <div className='container pt-6 lg:pt-6'>
       <Slider {...settings}>
         {slideData.map((item) => (
           <Slide
@@ -62,6 +52,8 @@ const Hero = () => {
         ))}
       </Slider>
     </div>
+    </div>
+   
   );
 };
 
