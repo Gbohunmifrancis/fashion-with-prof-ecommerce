@@ -14,14 +14,14 @@ const HeaderMain = ({ children }) => {
                 </div>
 
                 <div className='w-full sm:w-[300px] md:w-[70%] relative flex items-center right-3'>
-                    <input
+                    {/* <input                                                                
                         className='border-gray-200 border p-2 px-4 rounded-lg w-full'
                         type='text'
                         placeholder='Enter any Product name...'
-                    />
-                    <BsSearch className='mr-3 mt-3 right-14 absolute top-1/2 transform -translate-y-1/2 text-gray-400' size={20} />
+                    /> */}
+                    {/* <BsSearch className='mr-3 mt-3 right-14 absolute top-1/2 transform -translate-y-1/2 text-gray-400' size={20} /> */}
 
-                    <div className='gap-4 ml-8 flex space-x-4 text-gray-500 text-[30px]'>
+                    <div className='gap-3 ml-8 flex space-x-4 text-gray-500 text-[30px]'>
                         <BiUser />
                         <div className='relative'>
                             <FiHeart />
