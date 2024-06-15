@@ -1,4 +1,6 @@
 import React from 'react'
+import ProductCard from './ProductCard'
+import Image from 'next/image'
 
 const ProductsData = [
     {
@@ -10,7 +12,7 @@ const ProductsData = [
 
     },
     {
-        img:"/cartier",
+        img:"/cartier.jpg",
         title: "Cartier Men Wristwatch",
         desc: "Diamond-like stones Cartier Watch",
         rating: "5",
@@ -34,7 +36,7 @@ const ProductsData = [
 
     },
     {
-        img:"/sports.jpg",
+        img:"/sports-1.jpg",
         title: "Sports Boot",
         desc: "Boots for all Football Lovers",
         rating: "3",
@@ -42,7 +44,7 @@ const ProductsData = [
 
     },
     {
-        img:"/skirts-1.jpg",
+        img:"/skirt-1.jpg",
         title: "Women Skirts",
         desc: "Deeper-life Skirts for our Sisters",
         rating: "5",
@@ -50,7 +52,7 @@ const ProductsData = [
 
     },
     {
-        img:"shirt-1.jpg",
+        img:"/shirt-1.jpg",
         title: "Men Shirt",
         desc: "Men Shirt: Elevate your swag",
         rating: "5",
@@ -94,11 +96,21 @@ const ProductsData = [
 const NewProducts = () => {
   return (
     <div>
-      <div>
-        <h2>New Products</h2>
-        <div>
+      <div className='container pt-16'>
+        <h2 className='font-medium text-2xl pb-4'>New Products</h2>
+        <div className='grid grid-cols-1 place-items-center sm:place-items-start sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-20 xl:gap-y-10'>
             {
-                ProductsData.((item, index)=> {
+                ProductsData.map((item, index)=> {
+                    return(
+                        <ProductCard
+                        key = {index}
+                        img = {item.img}
+                        title = {item.title}
+                        desc = {item.desc}
+                        rating = {item.rating}
+                        price = {item.price}
+                        />
+                    )
 
                 })
             }
